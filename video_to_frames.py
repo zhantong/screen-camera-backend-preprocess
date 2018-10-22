@@ -21,5 +21,5 @@ def video_to_frames(video_path):
         dst[dst == 0] = 255
 
         cv2.imwrite(os.path.join(dir_name, "frame%04d.png" % count), dst)
-        success, image = vidcap.read()
+        success, img = vidcap.read()
         count += 1
